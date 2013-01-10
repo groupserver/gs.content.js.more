@@ -17,7 +17,7 @@ var GSMoreWidget = function (widgetId) {
     };
 
     var handle_click = function(event, data) {
-        if content.hasClass('gs-content-js-more-content-small') {
+        if (content.hasClass('gs-content-js-more-content-small')) {
             enlarge();
         } else {
             compress();
@@ -26,7 +26,12 @@ var GSMoreWidget = function (widgetId) {
 
     var init = function () {
         widget = jQuery(widgetId);
+
         content = widget.find('.gs-content-js-more-content');
+
         button = widget.find('.gs-content-js-more-button');
+        button.removeAttr('href');
+        button.css('cursor', 'pointer');
+        button.click(handle_click);
     }(); // init. Note the () is deliberate, so it is run automatically.
 };
