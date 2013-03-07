@@ -52,7 +52,7 @@ var GSMoreWidget = function (widgetId) {
 
             compress();
         } else { // content.height() <= 80
-            widget.find('.gs-content-js-more-buttons').hide();
+            widget.find('.gs-content-js-more-buttons').addClass('hide');
         }
     }
 
