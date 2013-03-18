@@ -8,4 +8,9 @@
     file="browser/javascript/more.js"
     permission="zope2.Public" />
 
+  <browser:resource 
+    name="gs-content-js-more-min-20130110.js"
+    file="browser/javascript/more-min.js"
+    permission="zope2.Public" />
+
 </configure>
