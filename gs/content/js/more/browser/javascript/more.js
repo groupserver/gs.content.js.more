@@ -1,15 +1,9 @@
 // The More widget for GroupServer
 jQuery.noConflict();
 
-var GSMoreWidget = function (widgetId) {
+function GSMoreWidget (widgetId) {
     // Private variables
-    var widget = null;
-    var content = null;
-    var moreButton = null;
-    var lessButton = null;
-
-    var LARGE = 'gs-content-js-more-content-large';
-    var SMALL = 'gs-content-js-more-content-small';
+    var widget = null, content = null, moreButton = null, lessButton = null, LARGE = 'gs-content-js-more-content-large', SMALL = 'gs-content-js-more-content-small';
 
     function compress() {
         content.removeClass(LARGE);
