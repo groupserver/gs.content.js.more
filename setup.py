@@ -19,6 +19,7 @@ setup(name='gs.content.js.more',
         "Operating System :: OS Independent"
         "Programming Language :: JavaScript",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+        "Topic :: Software Development :: Libraries :: JavaScript Modules",
       ],
       keywords='javascript button disclosure more',
       author='Michael JasonSmith',
