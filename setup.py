@@ -9,25 +9,31 @@ setup(name='gs.content.js.more',
       description="The More widget for GroupServer.",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
-      # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        "Environment :: Web Environment",
+        "Framework :: Zope2",
+        "Intended Audience :: Developers",
+        'License :: OSI Approved :: Zope Public License',
+        "Natural Language :: English",
+        "Operating System :: OS Independent"
         "Programming Language :: JavaScript",
-        "Topic :: Software Development :: Libraries :: Python Modules",
-        ],
+        "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+      ],
       keywords='javascript button disclosure more',
       author='Michael JasonSmith',
       author_email='mpj17@onlinegroups.net',
       url='http://www.groupserver.org/',
-      license='GPL',
+      license='ZPL 2.1',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['gs'],
       include_package_data=True,
       zip_safe=True,
       install_requires=[
           'setuptools',
-          'zope.browserresource',
           'gs.content.js.jquery.base',
       ],
+      extras_require={'zope': ['zope.browserresource', ]},
       entry_points="""
       # -*- Entry points: -*-
       """, 
