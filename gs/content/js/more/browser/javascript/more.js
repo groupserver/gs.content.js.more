@@ -1,3 +1,6 @@
+"use strict";
+// More-widget
+//
 // Copyright © 2013, 2014 OnlineGroups.net and Contributors.
 // All Rights Reserved.
 //
@@ -12,7 +15,9 @@ jQuery.noConflict();
 
 function GSMoreWidget (widgetId) {
     // Private variables
-    var widget = null, content = null, moreButton = null, lessButton = null, LARGE = 'gs-content-js-more-content-large', SMALL = 'gs-content-js-more-content-small';
+    var widget=null, content=null, moreButton=null, lessButton=null, 
+        LARGE='gs-content-js-more-content-large', 
+        SMALL='gs-content-js-more-content-small';
 
     function compress() {
         content.removeClass(LARGE);
