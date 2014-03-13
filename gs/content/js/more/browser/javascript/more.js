@@ -51,4 +51,8 @@ function GSMoreWidget (widgetId) {
     }
 
     init(); // Run the init automatically.
-};
+
+    return {
+        is_small: function() {content.hasClass(SMALL);}
+    }
+}
