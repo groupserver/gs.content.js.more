@@ -4,4 +4,5 @@ i.addClass(g);j.hide();b.show()}function h(l,m){if(i.hasClass(a)){d()}else{c()}}
 i=e.find(".gs-content-js-more-content");j=e.find(".gs-content-js-more-buttons-more");
 b=e.find(".gs-content-js-more-buttons-less");d();if(i.height()>80){j.removeAttr("href");
 j.css("cursor","pointer");j.click(h);b.removeAttr("href");b.css("cursor","pointer");
-b.click(h);c()}else{e.find(".gs-content-js-more-buttons").addClass("hide")}}k()};
+b.click(h);c()}else{e.find(".gs-content-js-more-buttons").addClass("hide")}}k();return{is_small:function(){i.hasClass(a)
+}}};
