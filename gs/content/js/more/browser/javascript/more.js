@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 // More-widget
 //
-// Copyright © 2013, 2014 OnlineGroups.net and Contributors.
+// Copyright © 2013, 2014, 2016 OnlineGroups.net and Contributors.
 // All Rights Reserved.
 //
 // This software is subject to the provisions of the Zope Public License,
@@ -13,11 +13,11 @@
 // FITNESS FOR A PARTICULAR PURPOSE.
 jQuery.noConflict();
 
-function GSMoreWidget (widgetId) {
+function GSMoreWidget(widgetId) {
     // Private variables
-    var widget=null, content=null, moreButton=null, lessButton=null, 
-        LARGE='gs-content-js-more-content-large', 
-        SMALL='gs-content-js-more-content-small';
+    var widget = null, content = null, moreButton = null, lessButton = null,
+        LARGE = 'gs-content-js-more-content-large',
+        SMALL = 'gs-content-js-more-content-small';
 
     // private methods
     function compress() {
@@ -56,7 +56,7 @@ function GSMoreWidget (widgetId) {
             moreButton.removeAttr('href');
             moreButton.css('cursor', 'pointer');
             moreButton.click(handle_click);
-            
+
             lessButton.removeAttr('href');
             lessButton.css('cursor', 'pointer');
             lessButton.click(handle_click);
@@ -71,6 +71,6 @@ function GSMoreWidget (widgetId) {
 
     // public methods
     return {
-        is_small: function() {content.hasClass(SMALL);}
-    }
-}
+        is_small: function() { content.hasClass(SMALL); }
+    };
+}// GSMoreWidget
