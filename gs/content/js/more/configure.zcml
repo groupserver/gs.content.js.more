@@ -14,6 +14,15 @@
            xmlns:browser="http://namespaces.zope.org/browser">
 
   <browser:resource
+    name="gs-content-js-more-20160125.js"
+    file="browser/javascript/more.js"
+    permission="zope2.Public" />
+  <browser:resource
+    name="gs-content-js-more-min-20160125.js"
+    file="browser/javascript/more-min.js"
+    permission="zope2.Public" />
+  <!--Old-->
+  <browser:resource
     name="gs-content-js-more-20140313.js"
     file="browser/javascript/more.js"
     permission="zope2.Public" />
